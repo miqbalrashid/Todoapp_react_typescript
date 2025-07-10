@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;700;900&family=Urbanist:wght@300;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
+}
+
+h1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 4.8rem;
+    background: linear-gradient(to right, #68B984, #D14D72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+    margin-bottom: 3rem;
+    letter-spacing: 0.2rem;
+    text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 2.4rem;
+    color: #3A3845;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.6rem;
+    text-align: center;
+    position: relative;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    width: 6rem;
+    height: 0.3rem;
+    background-color: #68B984;
+    margin: 0.8rem auto 0;
+    border-radius: 1rem;
+}
+
+
+body {
+    background: linear-gradient(to right, #e0f7fa, #fce4ec);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Base font size */
+html {
+    font-size: 62.5%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin-top: 10rem;
+}
+
+main h3 {
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 4.8rem;
+    color: #333;
+}
+
+main h2 .icons {
+    color: #68B984;
+}
+
+/* Navbar */
+nav {
+    width: 55rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1rem solid #ccc;
+    margin-bottom: 2rem;
+}
+
+nav a {
+    font-size: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+    color: #999;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #68B984;
+    border-color: #3A3845;
+}
+
+nav a.active {
+    color: #000;
+    border-color: #68B984;
+}
+
+/* Form */
+form {
+    background-color: #ffffffcc;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+}
+
+form input {
+    border: 0.1rem solid #ccc;
+    border-radius: 0.5rem;
+    width: 45rem;
+    margin: 1.2rem 0;
+    padding: 0.8rem 1.2rem;
+    font-size: 1.6rem;
+    letter-spacing: 0.06rem;
+    font-weight: bold;
+}
+
+form button {
+    padding: 0.8rem 2.8rem;
+    border: none;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 2.4rem;
+    background-color: #68B984;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #4caf81;
+}
+
+label {
+    font-size: 1.5rem;
+    letter-spacing: 0.06rem;
+    color: #3A3845;
+    font-weight: bold;
+}
+
+/* Todo task list */
+.main-task {
+    background-color: #ffffffcc;
+    border-radius: 1rem;
+    box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.main-task li {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    align-items: center;
+    width: 50rem;
+    min-height: 6rem;
+    border-bottom: 0.1rem solid #ccc;
+    padding: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-task li:first-child {
+    border-top: 0.1rem solid #ccc;
+}
+
+.main-task li:hover {
+    background-color: #fce4ec;
+}
+
+.main-task li input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    color: #D14D72;
+}
+
+.main-task li button {
+    padding: 0.6rem 1rem;
+    width: 7rem;
+    background-color: #D14D72;
+    color: #FFF9F9;
+    border: none;
+    border-radius: 0.4rem;
+    display: inline-block;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+    transition: background-color 0.3s ease;
+}
+
+.main-task li button:hover {
+    background-color: #b43a5e;
+}
