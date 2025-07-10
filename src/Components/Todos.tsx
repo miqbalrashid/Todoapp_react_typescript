@@ -6,7 +6,7 @@ const Todos = () => {
     const {todos, toggleTodoAsCompleted, handleDeleteTodo} = useTodos();
 
     const [searchParams] = useSearchParams();
-    let todosData = searchParams.get("todos");
+    const todosData = searchParams.get("todos");
     console.log("🚀 ~ file: todos.tsx:10 ~ Todos ~ todos̥Data:", todosData)
 
 
