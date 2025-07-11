@@ -7,7 +7,7 @@ const Todos = () => {
 
     const [searchParams] = useSearchParams();
     const todosData = searchParams.get("todos");
-    console.log("🚀 ~ file: todos.tsx:10 ~ Todos ~ todos̥Data:", todosData)
+    console.log("🚀 ~ file: todos.tsx:10 ~ Todos ~ todosData:", todosData)
 
 
     let filterData = todos;

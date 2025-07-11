@@ -20,7 +20,7 @@ export type TodosContext = {
 
 export const todosContext = createContext<TodosContext | null >(null)
 
-export const TodosProvideer = ({children}:TodosProviderProps) => {
+export const TodosProvider = ({children}:TodosProviderProps) => {
 
     const[todos, setTodos] = useState<Todo[]>(() => {
         try {
